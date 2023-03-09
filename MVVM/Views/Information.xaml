@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MVVM.Information"
+             xmlns:local ="clr-namespace:MVVM"
+             Title="Information">
+    <VerticalStackLayout>
+        <Label Text="5025201161"
+               BindingContext="{x:Reference slider}"
+               Rotation="{Binding Path=Value}"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+        <Label Text="Venia Sollery Aliyya Hasna"
+               BindingContext="{x:Reference slider}"
+               Rotation="{Binding Path=Value}"
+               FontAttributes="Bold"
+               FontSize="18"
+               HorizontalOptions="Center"
+               VerticalOptions="Center" />
+
+
+        <Slider x:Name="slider"
+                Maximum="360"
+                VerticalOptions="Center"/>
+        
+        
+
+    </VerticalStackLayout>
+
+
+</ContentPage>
